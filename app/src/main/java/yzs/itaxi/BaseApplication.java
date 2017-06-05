@@ -22,7 +22,8 @@ public class BaseApplication extends Application{
     private void initConfig() {
         AllUtilConfig.applicationContext = this;
         AllUtilConfig.DES_Key = "sfasfsdf";
-        AllUtilConfig.LogSwitch = true;
+        AllUtilConfig.LogSwitch = BuildConfig.DEBUG;
+
         //路由框架初始化
         ARouter.init(this);
 
