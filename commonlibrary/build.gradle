@@ -52,6 +52,8 @@ dependencies {
 
     // AutoLayout智能适配布局
     compile "com.zhy:autolayout:${AUTO_LAYOUT_VERSION}"
+    // 简易适配器 https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+    compile "com.github.CymChad:BaseRecyclerViewAdapterHelper:${QUICK_ADAPTER_VERSION}"
     // ARouter 路由框架
     compile "com.alibaba:arouter-api:${AROUTER_API_VERSION}"
     annotationProcessor "com.alibaba:arouter-compiler:${AROUTER_COMPILER_VERSION}"

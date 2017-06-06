@@ -20,6 +20,10 @@
 #    <fields>;
 #    <methods>;
 #}
+
+#张鸿阳 auto layout
 -dontwarn com.zhy.**
 -keep class com.zhy.** {*;}
 
+# QuickAdapter 适配器
+-keep class com.chad.library.adapter.** {*;}
