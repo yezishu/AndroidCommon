@@ -26,6 +26,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildTypes.each {
+        println IsBuildModule.toBoolean()
+        if (!IsBuildModule.toBoolean()) {
+            it.buildConfigField "boolean", "IS_BUILD_MOUDLE", "false"
+        } else {
+            it.buildConfigField "boolean", "IS_BUILD_MOUDLE", "true"
+        }
+    }
+    
 }
 
 dependencies {

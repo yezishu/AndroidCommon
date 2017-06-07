@@ -1,5 +1,5 @@
-println IsBuildMudle.toBoolean()
-if (IsBuildMudle.toBoolean()) {
+println IsBuildModule.toBoolean()
+if (IsBuildModule.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {
     apply plugin: 'com.android.library'

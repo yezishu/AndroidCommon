@@ -62,8 +62,8 @@ android {
 }
 
 dependencies {
-    println IsBuildMudle.toBoolean()
-    if (!IsBuildMudle.toBoolean()) {
+    println IsBuildModule.toBoolean()
+    if (!IsBuildModule.toBoolean()) {
         compile project(':map')
     } else {
         compile project(':commonlibrary')
